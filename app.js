@@ -14,6 +14,7 @@ new Vue({
             console.log('addToB');
             return this.b + this.age;
         }*/
+		// 一旦被执行会执行里面所有方法,多次调用dom
     },
     computed: {
         addToA: function(){
@@ -23,6 +24,7 @@ new Vue({
         addToB: function(){
             console.log('addToB');
             return this.b + this.age;
-        }
+        },
+		// 用法相似,优化dom
     }
 });

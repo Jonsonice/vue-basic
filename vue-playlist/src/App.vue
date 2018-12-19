@@ -1,9 +1,10 @@
 <!-- 1模板 html结构 -->
 <template>
   <div id="app">
-    <app-header></app-header>
+    <app-header :title="title"></app-header>
     <users v-bind:users="users"></users>
-    <app-footer></app-footer>
+    <users v-bind:users="users"></users>
+    <app-footer :title="title"></app-footer>
   </div>
 </template>
 
@@ -28,7 +29,8 @@ export default {
         {name:"wawa", position:'中介' ,show:true},
         {name:"liuuu", position:'医生' ,show:false},
         {name:"miwd", position:'消防员' ,show:true}
-      ]
+      ],
+      title:"传递的是一个值，( number string boolean)"
     }
   },
   components:{

@@ -19,7 +19,9 @@ export default {
   },
   methods:{
     changeTitle:function(){
-      this.title = "changed";
+      // this.title = "changed";
+      // 注册事件
+      this.$emit("titleChanged","子向父组件传值");
     }
   }
 }

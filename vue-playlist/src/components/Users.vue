@@ -13,18 +13,16 @@
 <script>
 export default {
   name: 'users',
+  // props:["users"]
+  props:{
+    users:{
+      type:Array,
+      required:true
+    }
+  },
   data(){
     return{
-      users:[
-        {name:"Henry", position:'总裁' ,show:false},
-        {name:"lili", position:'经理' ,show:true},
-        {name:"sanmi", position:'保洁' ,show:false},
-        {name:"kuja", position:'人力资源' ,show:true},
-        {name:"kaway", position:'安保' ,show:false},
-        {name:"wawa", position:'中介' ,show:true},
-        {name:"liuuu", position:'医生' ,show:false},
-        {name:"miwd", position:'消防员' ,show:true}
-      ]
+     
     }
   }
 }
